@@ -58,7 +58,7 @@ function HeroSlider() {
                     <>
                         <button
                             onClick={prevSlide}
-                            className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white-400 bg-opacity-50 p-3 rounded-full hover:bg-opacity-70 cursor-pointer"
+                            className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white bg-opacity-50 p-3 rounded-full hover:bg-opacity-70 cursor-pointer"
                         >
                             <FiChevronLeft size={24} />
                         </button>
