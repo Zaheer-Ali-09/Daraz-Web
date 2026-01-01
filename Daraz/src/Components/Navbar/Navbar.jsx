@@ -73,8 +73,13 @@ function Navbar() {
                     <a href="#" className="hover:underline">SAVE MORE ON APP</a>
                     <a href="#" className="hover:underline">SELL ON DARAZ</a>
                     <a href="#" className="hover:underline">HELP & SUPPORT</a>
-                    <Link to="/login" className="hover:underline">LOGIN</Link>
-                    <Link to="/signup" className="hover:underline">SIGN UP</Link>
+
+                    <Link to="/login" className="hover:underline">
+                        LOGIN
+                    </Link><Link to="/signup" className="hover:underline">
+                        SIGN UP
+                    </Link>
+
                     <Link to="#" className="hover:underline">زبان تبدیل کریں</Link>
                 </div>
             </div>
