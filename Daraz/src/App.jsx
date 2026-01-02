@@ -5,7 +5,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Hero from "./Components/Hero Section/Hero";
 import Login from "./Components/Auth/Login";
 import Signup from "./Components/Auth/Signup";
-// import Cart from "./Components/Cart/Cart";
+import Product from "./Components/Firstproduct.jsx/Prodect";
 
 import "./App.css";
 
@@ -42,6 +42,7 @@ function App() {
       >
         <Navbar />
         <Hero />
+        <Product />
       </div>
 
 
