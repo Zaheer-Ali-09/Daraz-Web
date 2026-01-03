@@ -13,6 +13,12 @@ import img10 from "../../assets/Images/10.jpg_.avif";
 import img11 from "../../assets/Images/11.jpg_.avif";
 import img12 from "../../assets/Images/12.jpg_.avif";
 import img13 from "../../assets/Images/13.jpg_.avif";
+import img14 from "../../assets/Images/new.jpg_.avif";
+import img15 from "../../assets/Images/new1.jpg_.avif";
+import img16 from "../../assets/Images/new2.jpg_.avif";
+import img17 from "../../assets/Images/new43.jpg_.avif";
+import img18 from "../../assets/Images/new5.jpg_.avif";
+// import img19 from "../../assets/Images/13.jpg_.avif";
 
 import ScanBanner from "../../assets/Images/scan.png";
 
@@ -20,7 +26,7 @@ import ScanBanner from "../../assets/Images/scan.png";
 // Images array
 const images = [
     img01, img02, img03, img04, img05, img06, img07,
-    img08, img09, img10, img11, img12, img13
+    img08, img09, img10, img11, img12, img13, img14, img15, img16, img17, img18
 ];
 
 function HeroSlider() {
@@ -31,7 +37,7 @@ function HeroSlider() {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex(prev => (prev === images.length - 1 ? 0 : prev + 1));
-        }, 4000);
+        }, 5000);
 
         return () => clearInterval(interval);
     }, []);
