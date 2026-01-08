@@ -6,7 +6,8 @@ import Hero from "./Components/Hero Section/Hero";
 import Login from "./Components/Auth/Login";
 import Signup from "./Components/Auth/Signup";
 import Product from "./Components/Firstproduct.jsx/Prodect";
-
+import SecProdect from "./Components/SecProdect/prodect"
+ 
 import "./App.css";
 
 function App() {
@@ -43,6 +44,8 @@ function App() {
         <Navbar />
         <Hero />
         <Product />
+        <SecProdect />
+
       </div>
 
 

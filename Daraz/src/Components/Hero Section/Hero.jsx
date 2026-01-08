@@ -35,12 +35,17 @@ function HeroSlider() {
 
     // Auto slide every 2 seconds
     useEffect(() => {
+        if (hover) return; // hover par slider ruk jaega
+
         const interval = setInterval(() => {
-            setCurrentIndex(prev => (prev === images.length - 1 ? 0 : prev + 1));
-        }, 5000);
+            setCurrentIndex(prev =>
+                prev === images.length - 1 ? 0 : prev + 1
+            );
+        }, 3000);
 
         return () => clearInterval(interval);
-    }, []);
+    }, [hover]);
+
 
     const prevSlide = () => setCurrentIndex(prev => (prev === 0 ? images.length - 1 : prev - 1));
     const nextSlide = () => setCurrentIndex(prev => (prev === images.length - 1 ? 0 : prev + 1));
