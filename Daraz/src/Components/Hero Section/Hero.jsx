@@ -52,7 +52,7 @@ function HeroSlider() {
 
     return (
         <div
-            className="w-4.2/5 h-[60vh] mx-auto  flex overflow-hidden relative ml-10 mr-10"
+            className="w-4.2/5 h-[60vh] bg-[#e9f2f2] mx-auto  flex overflow-hidden relative ml-10 mr-10"
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
         >

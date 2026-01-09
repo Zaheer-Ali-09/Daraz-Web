@@ -7,7 +7,8 @@ import Login from "./Components/Auth/Login";
 import Signup from "./Components/Auth/Signup";
 import Product from "./Components/Firstproduct.jsx/Prodect";
 import SecProdect from "./Components/SecProdect/prodect"
- 
+import SellProdect from "./Components/SellProdect/prodect"
+
 import "./App.css";
 
 function App() {
@@ -45,7 +46,7 @@ function App() {
         <Hero />
         <Product />
         <SecProdect />
-
+        <SellProdect />
       </div>
 
 
