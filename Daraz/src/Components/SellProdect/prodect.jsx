@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import Product1 from "../../assets/Images/sell1.jpg_.avif";
 import Product2 from "../../assets/Images/sell2.jpg_.avif";
 import Product3 from "../../assets/Images/sell3.jpg_.avif";
@@ -22,326 +24,321 @@ import Product21 from "../../assets/Images/sell15.jpg_.avif";
 import Product22 from "../../assets/Images/sell18.jpg_.avif";
 
 const products = [
-    {
-        id: 1,
-        title: "Vital Tea Zip Lock Pack 900g",
-        price: "Rs.1,598",
-        oldPrice: "Rs.1,800",
-        discount: "-11%",
-        image: Product1,
-        rating: 4.5,
-        reviews: 120,
-    },
-    {
-        id: 2,
-        title: "Pampers Baby Diapers Size 5",
-        price: "Rs.2,248",
-        oldPrice: "Rs.2,650",
-        discount: "-15%",
-        image: Product2,
-        rating: 4.2,
-        reviews: 89,
-    },
-    {
-        id: 3,
-        title: "Nestle Everyday Milk Powder 850g",
-        price: "Rs.1,549",
-        oldPrice: "Rs.1,770",
-        discount: "-12%",
-        image: Product3,
-        rating: 4.7,
-        reviews: 210,
-    },
-    {
-        id: 4,
-        title: "Nestle Cerelac 3 Fruits",
-        price: "Rs.375",
-        oldPrice: "Rs.450",
-        discount: "-17%",
-        image: Product4,
-        rating: 4.3,
-        reviews: 64,
-    },
-    {
-        id: 5,
-        title: "Petrella Bubble Gun Toy",
-        price: "Rs.414",
-        oldPrice: "Rs.999",
-        discount: "-59%",
-        image: Product5,
-        rating: 4.0,
-        reviews: 45,
-    },
-    {
-        id: 6,
-        title: "Glutathione + Vitamin C Tablets",
-        price: "Rs.661",
-        oldPrice: "Rs.2,000",
-        discount: "-67%",
-        image: Product6,
-        rating: 4.6,
-        reviews: 132,
-    },
-    {
-        id: 7,
-        title: "Kids Educational Toy Set",
-        price: "Rs.899",
-        oldPrice: "Rs.1,299",
-        discount: "-31%",
-        image: Product7,
-        rating: 4.1,
-        reviews: 58,
-    },
-    {
-        id: 8,
-        title: "Organic Green Tea Pack",
-        price: "Rs.999",
-        oldPrice: "Rs.1,350",
-        discount: "-26%",
-        image: Product8,
-        rating: 4.8,
-        reviews: 190,
-    },
-    {
-        id: 9,
-        title: "Baby Feeding Bottle BPA Free",
-        price: "Rs.699",
-        oldPrice: "Rs.950",
-        discount: "-26%",
-        image: Product9,
-        rating: 4.4,
-        reviews: 77,
-    },
-    {
-        id: 10,
-        title: "Daily Multivitamin Tablets",
-        price: "Rs.1,199",
-        oldPrice: "Rs.1,699",
-        discount: "-29%",
-        image: Product10,
-        rating: 4.6,
-        reviews: 140,
-    },
-    {
-        id: 11,
-        title: "Chocolate Breakfast Cereal",
-        price: "Rs.749",
-        oldPrice: "Rs.980",
-        discount: "-24%",
-        image: Product11,
-        rating: 4.3,
-        reviews: 92,
-    },
-    {
-        id: 12,
-        title: "Baby Skin Care Lotion",
-        price: "Rs.599",
-        oldPrice: "Rs.899",
-        discount: "-33%",
-        image: Product12,
-        rating: 4.5,
-        reviews: 110,
-    },
-    {
-        id: 12,
-        title: "Baby Skin Care Lotion",
-        price: "Rs.599",
-        oldPrice: "Rs.899",
-        discount: "-33%",
-        image: Product13,
-        rating: 4.5,
-        reviews: 110,
-    }, {
-        id: 12,
-        title: "Baby Skin Care Lotion",
-        price: "Rs.599",
-        oldPrice: "Rs.899",
-        discount: "-33%",
-        image: Product14,
-        rating: 4.5,
-        reviews: 110,
-    }, {
-        id: 12,
-        title: "Baby Skin Care Lotion",
-        price: "Rs.599",
-        oldPrice: "Rs.899",
-        discount: "-33%",
-        image: Product15,
-        rating: 4.5,
-        reviews: 110,
-    }, {
-        id: 12,
-        title: "Baby Skin Care Lotion",
-        price: "Rs.599",
-        oldPrice: "Rs.899",
-        discount: "-33%",
-        image: Product16,
-        rating: 4.5,
-        reviews: 110,
-    }, {
-        id: 12,
-        title: "Baby Skin Care Lotion",
-        price: "Rs.599",
-        oldPrice: "Rs.899",
-        discount: "-33%",
-        image: Product17,
-        rating: 4.5,
-        reviews: 110,
-    }, {
-        id: 12,
-        title: "Baby Skin Care Lotion",
-        price: "Rs.599",
-        oldPrice: "Rs.899",
-        discount: "-33%",
-        image: Product18,
-        rating: 4.5,
-        reviews: 110,
-    }, {
-        id: 12,
-        title: "Baby Skin Care Lotion",
-        price: "Rs.599",
-        oldPrice: "Rs.899",
-        discount: "-33%",
-        image: Product19,
-        rating: 4.5,
-        reviews: 110,
-    }, {
-        id: 12,
-        title: "Baby Skin Care Lotion",
-        price: "Rs.599",
-        oldPrice: "Rs.899",
-        discount: "-33%",
-        image: Product20,
-        rating: 4.5,
-        reviews: 110,
-    }, {
-        id: 12,
-        title: "Baby Skin Care Lotion",
-        price: "Rs.599",
-        oldPrice: "Rs.899",
-        discount: "-33%",
-        image: Product21,
-        rating: 4.5,
-        reviews: 110,
-    }, {
-        id: 12,
-        title: "Baby Skin Care Lotion",
-        price: "Rs.599",
-        oldPrice: "Rs.899",
-        discount: "-33%",
-        image: Product22,
-        rating: 4.5,
-        reviews: 110,
-    }, {
-        id: 12,
-        title: "Baby Skin Care Lotion",
-        price: "Rs.599",
-        oldPrice: "Rs.899",
-        discount: "-33%",
-        image: Product12,
-        rating: 4.5,
-        reviews: 110,
-    }, {
-        id: 12,
-        title: "Baby Skin Care Lotion",
-        price: "Rs.599",
-        oldPrice: "Rs.899",
-        discount: "-33%",
-        image: Product1,
-        rating: 4.5,
-        reviews: 110,
-    }, {
-        id: 12,
-        title: "Baby Skin Care Lotion",
-        price: "Rs.599",
-        oldPrice: "Rs.899",
-        discount: "-33%",
-        image: Product2,
-        rating: 4.5,
-        reviews: 110,
-    }, {
-        id: 12,
-        title: "Baby Skin Care Lotion",
-        price: "Rs.599",
-        oldPrice: "Rs.899",
-        discount: "-33%",
-        image: Product19,
-        rating: 4.5,
-        reviews: 110,
-    }, {
-        id: 12,
-        title: "Baby Skin Care Lotion",
-        price: "Rs.599",
-        oldPrice: "Rs.899",
-        discount: "-33%",
-        image: Product14,
-        rating: 4.5,
-        reviews: 110,
-    }, {
-        id: 12,
-        title: "Baby Skin Care Lotion",
-        price: "Rs.599",
-        oldPrice: "Rs.899",
-        discount: "-33%",
-        image: Product12,
-        rating: 4.5,
-        reviews: 110,
-    },
+  {
+    id: 1,
+    title: "Vital Tea Zip Lock Pack 900g",
+    price: "Rs.1,598",
+    oldPrice: "Rs.1,800",
+    discount: "-11%",
+    image: Product1,
+    rating: 4.5,
+    reviews: 120,
+  },
+  {
+    id: 2,
+    title: "Pampers Baby Diapers Size 5",
+    price: "Rs.2,248",
+    oldPrice: "Rs.2,650",
+    discount: "-15%",
+    image: Product2,
+    rating: 4.2,
+    reviews: 89,
+  },
+  {
+    id: 3,
+    title: "Nestle Everyday Milk Powder 850g",
+    price: "Rs.1,549",
+    oldPrice: "Rs.1,770",
+    discount: "-12%",
+    image: Product3,
+    rating: 4.7,
+    reviews: 210,
+  },
+  {
+    id: 4,
+    title: "Nestle Cerelac 3 Fruits",
+    price: "Rs.375",
+    oldPrice: "Rs.450",
+    discount: "-17%",
+    image: Product4,
+    rating: 4.3,
+    reviews: 64,
+  },
+  {
+    id: 5,
+    title: "Petrella Bubble Gun Toy",
+    price: "Rs.414",
+    oldPrice: "Rs.999",
+    discount: "-59%",
+    image: Product5,
+    rating: 4.0,
+    reviews: 45,
+  },
+  {
+    id: 6,
+    title: "Glutathione + Vitamin C Tablets",
+    price: "Rs.661",
+    oldPrice: "Rs.2,000",
+    discount: "-67%",
+    image: Product6,
+    rating: 4.6,
+    reviews: 132,
+  },
+  {
+    id: 7,
+    title: "Kids Educational Toy Set",
+    price: "Rs.899",
+    oldPrice: "Rs.1,299",
+    discount: "-31%",
+    image: Product7,
+    rating: 4.1,
+    reviews: 58,
+  },
+  {
+    id: 8,
+    title: "Organic Green Tea Pack",
+    price: "Rs.999",
+    oldPrice: "Rs.1,350",
+    discount: "-26%",
+    image: Product8,
+    rating: 4.8,
+    reviews: 190,
+  },
+  {
+    id: 9,
+    title: "Baby Feeding Bottle BPA Free",
+    price: "Rs.699",
+    oldPrice: "Rs.950",
+    discount: "-26%",
+    image: Product9,
+    rating: 4.4,
+    reviews: 77,
+  },
+  {
+    id: 10,
+    title: "Daily Multivitamin Tablets",
+    price: "Rs.1,199",
+    oldPrice: "Rs.1,699",
+    discount: "-29%",
+    image: Product10,
+    rating: 4.6,
+    reviews: 140,
+  },
+  {
+    id: 11,
+    title: "Chocolate Breakfast Cereal",
+    price: "Rs.749",
+    oldPrice: "Rs.980",
+    discount: "-24%",
+    image: Product11,
+    rating: 4.3,
+    reviews: 92,
+  },
+  {
+    id: 12,
+    title: "Baby Skin Care Lotion",
+    price: "Rs.599",
+    oldPrice: "Rs.899",
+    discount: "-33%",
+    image: Product12,
+    rating: 4.5,
+    reviews: 110,
+  },
+  {
+    id: 13,
+    title: "Baby Skin Care Lotion",
+    price: "Rs.599",
+    oldPrice: "Rs.899",
+    discount: "-33%",
+    image: Product13,
+    rating: 4.5,
+    reviews: 110,
+  },
+  {
+    id: 14,
+    title: "Baby Skin Care Lotion",
+    price: "Rs.599",
+    oldPrice: "Rs.899",
+    discount: "-33%",
+    image: Product14,
+    rating: 4.5,
+    reviews: 110,
+  },
+  {
+    id: 15,
+    title: "Baby Skin Care Lotion",
+    price: "Rs.599",
+    oldPrice: "Rs.899",
+    discount: "-33%",
+    image: Product15,
+    rating: 4.5,
+    reviews: 110,
+  },
+  {
+    id: 16,
+    title: "Baby Skin Care Lotion",
+    price: "Rs.599",
+    oldPrice: "Rs.899",
+    discount: "-33%",
+    image: Product16,
+    rating: 4.5,
+    reviews: 110,
+  },
+  {
+    id: 17,
+    title: "Baby Skin Care Lotion",
+    price: "Rs.599",
+    oldPrice: "Rs.899",
+    discount: "-33%",
+    image: Product17,
+    rating: 4.5,
+    reviews: 110,
+  },
+  {
+    id: 18,
+    title: "Baby Skin Care Lotion",
+    price: "Rs.599",
+    oldPrice: "Rs.899",
+    discount: "-33%",
+    image: Product18,
+    rating: 4.5,
+    reviews: 110,
+  },
+  {
+    id: 19,
+    title: "Baby Skin Care Lotion",
+    price: "Rs.599",
+    oldPrice: "Rs.899",
+    discount: "-33%",
+    image: Product19,
+    rating: 4.5,
+    reviews: 110,
+  },
+  {
+    id: 20,
+    title: "Baby Skin Care Lotion",
+    price: "Rs.599",
+    oldPrice: "Rs.899",
+    discount: "-33%",
+    image: Product20,
+    rating: 4.5,
+    reviews: 110,
+  },
+  {
+    id: 21,
+    title: "Baby Skin Care Lotion",
+    price: "Rs.599",
+    oldPrice: "Rs.899",
+    discount: "-33%",
+    image: Product21,
+    rating: 4.5,
+    reviews: 110,
+  },
+  {
+    id: 22,
+    title: "Baby Skin Care Lotion",
+    price: "Rs.599",
+    oldPrice: "Rs.899",
+    discount: "-33%",
+    image: Product22,
+    rating: 4.5,
+    reviews: 110,
+  },
 ];
 
 export default function ProductGrid() {
-    return (
-        <div className="max-w-7xl mx-auto px-10 py-6 bg-[#f1f4f4]">
+  const [selectedProduct, setSelectedProduct] = useState(null);
 
-            <div className="mb-5">
-                <h2 className="text-lg font-semibold text-orange-500">
-                    On Sale Now
-                </h2>
-            </div>
-
-            <div className="
-                grid
-                grid-cols-2
-                sm:grid-cols-3
-                md:grid-cols-4
-                lg:grid-cols-6
-                gap-4
-            ">
-                {products.map((item) => (
-                    <div
-                        key={item.id}
-                        className="bg-white hover:shadow-lg transition"
-                    >
-                        <div className="p-2">
-                            <img
-                                src={item.image}
-                                alt={item.title}
-                                className="w-full h-40 object-contain"
-                            />
-                        </div>
-
-                        <div className="p-4">
-                            <p className="text-xs text-gray-800 line-clamp-2">
-                                {item.title}
-                            </p>
-
-                            <p className="text-orange-500 font-semibold mt-1 text-sm">
-                                {item.price}
-                            </p>
-
-                            <div className="flex items-center gap-1 text-[11px] text-gray-500">
-                                <span className="line-through">{item.oldPrice}</span>
-                                <span>{item.discount}</span>
-                            </div>
-
-                            <div className="flex items-center gap-1 mt-1 text-[11px] text-gray-600">
-                                <span className="text-yellow-500">⭐ {item.rating}</span>
-                                <span>({item.reviews})</span>
-                            </div>
-                        </div>
-                    </div>
-                ))}
-            </div>
+  return (
+    <>
+      <div className="max-w-7xl mx-auto px-10 py-6 bg-[#f1f4f4]">
+        <div className="mb-5">
+          <h2 className="text-lg font-semibold text-orange-500">
+            On Sale Now
+          </h2>
         </div>
-    );
+
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+          {products.map((item) => (
+            <div
+              key={item.id}
+              onClick={() => setSelectedProduct(item)}
+              className="bg-white hover:shadow-lg transition cursor-pointer"
+            >
+              <div className="p-2">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-40 object-contain"
+                />
+              </div>
+
+              <div className="p-4">
+                <p className="text-xs text-gray-800 line-clamp-2">
+                  {item.title}
+                </p>
+
+                <p className="text-orange-500 font-semibold mt-1 text-sm">
+                  {item.price}
+                </p>
+
+                <div className="flex items-center gap-1 text-[11px] text-gray-500">
+                  <span className="line-through">{item.oldPrice}</span>
+                  <span>{item.discount}</span>
+                </div>
+
+                <div className="flex items-center gap-1 mt-1 text-[11px] text-gray-600">
+                  <span className="text-yellow-500">⭐ {item.rating}</span>
+                  <span>({item.reviews})</span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* PRODUCT DETAIL MODAL */}
+      {selectedProduct && (
+        <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50">
+          <div className="bg-white w-[90%] md:w-[420px] p-6 rounded relative">
+            <button
+              onClick={() => setSelectedProduct(null)}
+              className="absolute top-2 right-3 text-xl font-bold text-[#f25521]"
+            >
+              ✖
+            </button>
+
+            <img
+              src={selectedProduct.image}
+              alt=""
+              className="w-full h-52 object-contain"
+            />
+
+            <h2 className="text-lg font-semibold mt-4">
+              {selectedProduct.title}
+            </h2>
+
+            <p className="text-orange-500 font-bold mt-2">
+              {selectedProduct.price}
+            </p>
+
+            <div className="flex gap-2 text-sm text-gray-500">
+              <span className="line-through">
+                {selectedProduct.oldPrice}
+              </span>
+              <span>{selectedProduct.discount}</span>
+            </div>
+
+            <div className="mt-2 text-sm">
+              ⭐ {selectedProduct.rating} ({selectedProduct.reviews} reviews)
+            </div>
+
+            <button className="w-full mt-4 bg-orange-500 text-white py-2 rounded hover:bg-orange-600">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      )}
+    </>
+  );
 }

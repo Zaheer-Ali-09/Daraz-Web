@@ -7,13 +7,13 @@ import sec6 from "../../assets/Images/sec6.jpg_.avif";
 import sec7 from "../../assets/Images/sec7.jpg_.avif";
 import sec8 from "../../assets/Images/sec8.jpg_.avif";
 import sec9 from "../../assets/Images/sec9.jpg_.avif";
-import sec10 from "../../assets/Images/sec10.jpg_.avif";
+import sec10 from "../../assets/Images/sell27.jpg_.avif";
 import sec11 from "../../assets/Images/sec11.jpg_.avif";
 import sec12 from "../../assets/Images/sec12.jpg_.avif";
-import sec13 from "../../assets/Images/13.jpg_.avif";
-import sec14 from "../../assets/Images/14.jpg_.avif";
-import sec15 from "../../assets/Images/10.jpg_.avif";
-import sec16 from "../../assets/Images/14.jpg_.avif";
+import sec13 from "../../assets/Images/sell12.jpg_.avif";
+import sec14 from "../../assets/Images/sell17.jpg_.avif";
+import sec15 from "../../assets/Images/sell14.jpg_.avif";
+import sec16 from "../../assets/Images/sell1.jpg_.avif";
 
 
 const categories = [
