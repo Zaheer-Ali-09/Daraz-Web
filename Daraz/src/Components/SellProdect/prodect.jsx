@@ -1,9 +1,25 @@
-import Product1 from "../../assets/Images/prodecr01.jpg_.avif";
-import Product2 from "../../assets/Images/prodecr02.jpg_.avif";
-import Product3 from "../../assets/Images/prodecr03.jpg_.avif";
-import Product4 from "../../assets/Images/prodecr04.png_.avif";
-import Product5 from "../../assets/Images/prodecr05.jpg_400x400q80.jpg_.avif";
-import Product6 from "../../assets/Images/prodecr08.png_.avif";
+import Product1 from "../../assets/Images/sell1.jpg_.avif";
+import Product2 from "../../assets/Images/sell2.jpg_.avif";
+import Product3 from "../../assets/Images/sell3.jpg_.avif";
+import Product4 from "../../assets/Images/sell4.png_.avif";
+import Product5 from "../../assets/Images/sell5.jpg_.avif";
+import Product6 from "../../assets/Images/sell6.png_.avif";
+import Product7 from "../../assets/Images/sell7jpg_.avif";
+import Product8 from "../../assets/Images/sell8.png_.avif";
+import Product9 from "../../assets/Images/sell9.jpg_.avif";
+import Product10 from "../../assets/Images/sell10.jpg_.avif";
+import Product11 from "../../assets/Images/sell11.jpg_.avif";
+import Product12 from "../../assets/Images/sell12.jpg_.avif";
+import Product13 from "../../assets/Images/sell13.png_.avif";
+import Product14 from "../../assets/Images/sell14.jpg_.avif";
+import Product15 from "../../assets/Images/sell15.jpg_.avif";
+import Product16 from "../../assets/Images/sell16.png_.avif";
+import Product17 from "../../assets/Images/sell17.jpg_.avif";
+import Product18 from "../../assets/Images/sell11.jpg_.avif";
+import Product19 from "../../assets/Images/sell19.jpg_.avif";
+import Product20 from "../../assets/Images/sell20.jpg_.avif";
+import Product21 from "../../assets/Images/sell15.jpg_.avif";
+import Product22 from "../../assets/Images/sell18.jpg_.avif";
 
 const products = [
     {
@@ -72,7 +88,7 @@ const products = [
         price: "Rs.899",
         oldPrice: "Rs.1,299",
         discount: "-31%",
-        image: Product5,
+        image: Product7,
         rating: 4.1,
         reviews: 58,
     },
@@ -82,7 +98,7 @@ const products = [
         price: "Rs.999",
         oldPrice: "Rs.1,350",
         discount: "-26%",
-        image: Product1,
+        image: Product8,
         rating: 4.8,
         reviews: 190,
     },
@@ -92,7 +108,7 @@ const products = [
         price: "Rs.699",
         oldPrice: "Rs.950",
         discount: "-26%",
-        image: Product2,
+        image: Product9,
         rating: 4.4,
         reviews: 77,
     },
@@ -102,7 +118,7 @@ const products = [
         price: "Rs.1,199",
         oldPrice: "Rs.1,699",
         discount: "-29%",
-        image: Product6,
+        image: Product10,
         rating: 4.6,
         reviews: 140,
     },
@@ -112,7 +128,7 @@ const products = [
         price: "Rs.749",
         oldPrice: "Rs.980",
         discount: "-24%",
-        image: Product3,
+        image: Product11,
         rating: 4.3,
         reviews: 92,
     },
@@ -122,7 +138,152 @@ const products = [
         price: "Rs.599",
         oldPrice: "Rs.899",
         discount: "-33%",
-        image: Product4,
+        image: Product12,
+        rating: 4.5,
+        reviews: 110,
+    },
+    {
+        id: 12,
+        title: "Baby Skin Care Lotion",
+        price: "Rs.599",
+        oldPrice: "Rs.899",
+        discount: "-33%",
+        image: Product13,
+        rating: 4.5,
+        reviews: 110,
+    }, {
+        id: 12,
+        title: "Baby Skin Care Lotion",
+        price: "Rs.599",
+        oldPrice: "Rs.899",
+        discount: "-33%",
+        image: Product14,
+        rating: 4.5,
+        reviews: 110,
+    }, {
+        id: 12,
+        title: "Baby Skin Care Lotion",
+        price: "Rs.599",
+        oldPrice: "Rs.899",
+        discount: "-33%",
+        image: Product15,
+        rating: 4.5,
+        reviews: 110,
+    }, {
+        id: 12,
+        title: "Baby Skin Care Lotion",
+        price: "Rs.599",
+        oldPrice: "Rs.899",
+        discount: "-33%",
+        image: Product16,
+        rating: 4.5,
+        reviews: 110,
+    }, {
+        id: 12,
+        title: "Baby Skin Care Lotion",
+        price: "Rs.599",
+        oldPrice: "Rs.899",
+        discount: "-33%",
+        image: Product17,
+        rating: 4.5,
+        reviews: 110,
+    }, {
+        id: 12,
+        title: "Baby Skin Care Lotion",
+        price: "Rs.599",
+        oldPrice: "Rs.899",
+        discount: "-33%",
+        image: Product18,
+        rating: 4.5,
+        reviews: 110,
+    }, {
+        id: 12,
+        title: "Baby Skin Care Lotion",
+        price: "Rs.599",
+        oldPrice: "Rs.899",
+        discount: "-33%",
+        image: Product19,
+        rating: 4.5,
+        reviews: 110,
+    }, {
+        id: 12,
+        title: "Baby Skin Care Lotion",
+        price: "Rs.599",
+        oldPrice: "Rs.899",
+        discount: "-33%",
+        image: Product20,
+        rating: 4.5,
+        reviews: 110,
+    }, {
+        id: 12,
+        title: "Baby Skin Care Lotion",
+        price: "Rs.599",
+        oldPrice: "Rs.899",
+        discount: "-33%",
+        image: Product21,
+        rating: 4.5,
+        reviews: 110,
+    }, {
+        id: 12,
+        title: "Baby Skin Care Lotion",
+        price: "Rs.599",
+        oldPrice: "Rs.899",
+        discount: "-33%",
+        image: Product22,
+        rating: 4.5,
+        reviews: 110,
+    }, {
+        id: 12,
+        title: "Baby Skin Care Lotion",
+        price: "Rs.599",
+        oldPrice: "Rs.899",
+        discount: "-33%",
+        image: Product12,
+        rating: 4.5,
+        reviews: 110,
+    }, {
+        id: 12,
+        title: "Baby Skin Care Lotion",
+        price: "Rs.599",
+        oldPrice: "Rs.899",
+        discount: "-33%",
+        image: Product1,
+        rating: 4.5,
+        reviews: 110,
+    }, {
+        id: 12,
+        title: "Baby Skin Care Lotion",
+        price: "Rs.599",
+        oldPrice: "Rs.899",
+        discount: "-33%",
+        image: Product2,
+        rating: 4.5,
+        reviews: 110,
+    }, {
+        id: 12,
+        title: "Baby Skin Care Lotion",
+        price: "Rs.599",
+        oldPrice: "Rs.899",
+        discount: "-33%",
+        image: Product19,
+        rating: 4.5,
+        reviews: 110,
+    }, {
+        id: 12,
+        title: "Baby Skin Care Lotion",
+        price: "Rs.599",
+        oldPrice: "Rs.899",
+        discount: "-33%",
+        image: Product14,
+        rating: 4.5,
+        reviews: 110,
+    }, {
+        id: 12,
+        title: "Baby Skin Care Lotion",
+        price: "Rs.599",
+        oldPrice: "Rs.899",
+        discount: "-33%",
+        image: Product12,
         rating: 4.5,
         reviews: 110,
     },
