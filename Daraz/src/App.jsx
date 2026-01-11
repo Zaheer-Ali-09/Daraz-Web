@@ -9,6 +9,7 @@ import Product from "./Components/Firstproduct.jsx/Prodect";
 import SecProdect from "./Components/SecProdect/prodect"
 import SellProdect from "./Components/SellProdect/prodect"
 import StickyFooter from "./Components/Sticky footer/footer"
+import LastFooter from "./Components/LastFooter/footer"
 
 import "./App.css";
 
@@ -49,6 +50,7 @@ function App() {
         <SecProdect />
         <SellProdect />
         <StickyFooter />
+        <LastFooter />
       </div>
 
 
